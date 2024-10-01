@@ -199,3 +199,7 @@ INSERT INTO materiais (“nome”, “categoria”, “preco”) VALUES
 ('Fita para Embalagens Fragil', 'Embalagem e Presentes', 5.50),
 ('Caixa para Lembrancinhas', 'Brinquedos e Lembrancinhas', 12.90),
 ('Caderno 1 Materia Capa Dura', 'Material Escolar', 9.90);
+
+
+
+
