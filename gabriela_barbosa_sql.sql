@@ -1,3 +1,5 @@
+-- INSERT --
+
 INSERT INTO produtos (“nome”, “categoria”, “preco”) VALUES
 ('Caderno Universitario', 'Material Escolar', 15.99),
 ('Caneta Esferografica Azul', 'Material Escolar', 2.50),
@@ -212,3 +214,16 @@ INSERT INTO produtos (“nome”, “categoria”, “preco”) VALUES
 ('Fita para Embalagens Fragil', 'Embalagem e Presentes', 5.50),
 ('Caixa para Lembrancinhas', 'Brinquedos e Lembrancinhas', 12.90),
 ('Caderno 1 Materia Capa Dura', 'Material Escolar', 9.90);
+
+-- DELETE --
+
+DELETE FROM produtos WHERE preco > 79.00;
+DELETE FROM produtos WHERE preco = 24.00;
+DELETE FROM produtos WHERE preco <= 3.00;
+DELETE FROM produtos WHERE preco >= 45.00;
+DELETE FROM produtos WHERE preco <= 5.00;
+DELETE FROM produtos WHERE preco BETWEEN 10.00 AND 15.00;
+DELETE FROM produtos WHERE nome LIKE 'Caneta%';
+DELETE FROM produtos WHERE nome LIKE 'Caderno%';
+DELETE FROM produtos WHERE nome LIKE 'Papel%';
+DELETE FROM produtos WHERE nome LIKE 'Fita%';
