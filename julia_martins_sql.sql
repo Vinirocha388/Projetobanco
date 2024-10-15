@@ -1,15 +1,12 @@
-/* 13 deletes prontos*/
+DELETE FROM produtos WHERE nome = 'Cola Branca 90g';
+DELETE FROM produtos WHERE categoria = 'Material Escolar' AND preco > 30.00;
+DELETE FROM produtos WHERE id BETWEEN 15 AND 20;
+DELETE FROM produtos WHERE nome LIKE '%Papel%';
+DELETE FROM produtos WHERE categoria = 'Escritorio' AND preco < 25.00;
+DELETE FROM produtos WHERE id = 200;
+DELETE FROM produtos WHERE preco > 45.00;
+DELETE FROM produtos WHERE nome = 'Pasta Sanfonada';
+DELETE FROM produtos WHERE categoria = 'Arte e Desenho' AND preco > 25.00;
+DELETE FROM produtos WHERE preco BETWEEN 20.00 AND 30.00;
 
-DELETE FROM produtos WHERE preco > 50.00;
-DELETE FROM produtos WHERE preco < 3.00;
-DELETE FROM produtos WHERE preco >= 45.00;
-DELETE FROM produtos WHERE preco <= 5.00;
-DELETE FROM produtos WHERE preco BETWEEN 10.00 AND 15.00;
-DELETE FROM produtos WHERE nome LIKE 'caneta%';
-DELETE FROM produtos WHERE nome LIKE 'caderno%';
-DELETE FROM produtos WHERE nome LIKE 'papel%';
-DELETE FROM produtos WHERE nome LIKE 'fita';
-DELETE FROM produtos WHERE nome LIKE 'cola';
-DELETE FROM produtos WHERE nome LIKE ‘T%’;
-DELETE FROM produtos WHERE categoria = 'Brinquedos e Lembrancinhas' AND preco < 15.00;
-DELETE FROM produtos WHERE categoria = 'Material Escolar' AND preco > 20.00;
+
