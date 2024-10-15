@@ -205,7 +205,7 @@ INSERT INTO produtos (“nome”, “categoria”, “preco”) VALUES
 ('Pasta de Ziper Plastica', 'Organizacao', 7.50),
 ('Papel Laminado', 'Papeis', 6.50),
 ('Envelope Metalizado', 'Papeis', 3.20),
-('Caixa de Presente com Laço', 'Embalagem e Presentes', 19.90),
+('CaiDELETE FROM produtos WHERE preco > 79.00;xa de Presente com Laço', 'Embalagem e Presentes', 19.90),
 ('Porta-Bloco de Anotacoes', 'Escritorio', 15.90),
 ('Caixa para Cartao de Visitas', 'Escritorio', 12.50),
 ('Fita para Etiquetadora', 'Tecnologia e Acessorios', 11.90),
@@ -217,13 +217,12 @@ INSERT INTO produtos (“nome”, “categoria”, “preco”) VALUES
 
 -- DELETE --
 
-DELETE FROM produtos WHERE preco > 79.00;
-DELETE FROM produtos WHERE preco = 24.00;
-DELETE FROM produtos WHERE preco <= 3.00;
-DELETE FROM produtos WHERE preco >= 45.00;
-DELETE FROM produtos WHERE preco <= 5.00;
-DELETE FROM produtos WHERE preco BETWEEN 10.00 AND 15.00;
-DELETE FROM produtos WHERE nome LIKE 'Caneta%';
-DELETE FROM produtos WHERE nome LIKE 'Caderno%';
-DELETE FROM produtos WHERE nome LIKE 'Papel%';
-DELETE FROM produtos WHERE nome LIKE 'Fita%';
+DELETE FROM produtos WHERE id = 1;
+DELETE FROM produtos WHERE nome = 'Caderno Universitario';
+DELETE FROM produtos WHERE categoria = 'Material Escolar' AND preco > 10.00;
+DELETE FROM produtos WHERE preco BETWEEN 5.00 AND 10.00;
+DELETE FROM produtos WHERE id = 1 OR 2 OR 3;
+DELETE FROM produtos WHERE nome LIKE '%T%';
+DELETE FROM produtos WHERE categoria = 'Escritorio' AND preco < 20.00;
+
+
