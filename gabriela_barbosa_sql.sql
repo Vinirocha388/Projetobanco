@@ -236,4 +236,17 @@ DELETE FROM produtos WHERE categoria LIKE '%A%' LIMIT 3;
 DELETE FROM produtos WHERE preco < 5.00;
 DELETE FROM produtos WHERE nome = 'Regua 30cm';
 
+DELETE FROM produtos WHERE categoria = 'Material Escolar' AND preco > 20.00;
+DELETE FROM produtos WHERE nome LIKE '%R%' LIMIT 3;
+DELETE FROM produtos WHERE nome LIKE '%Pasta%';
+DELETE FROM produtos WHERE categoria = 'Escritorio' AND preco > 30.00;
+DELETE FROM produtos WHERE id BETWEEN 10.00 AND 15;
+DELETE FROM produtos WHERE preco > 40.00;
+DELETE FROM produtos WHERE nome = 'Grampeador Pequeno';
+DELETE FROM produtos WHERE categoria = 'Arte e Desenho' AND preco < 20.00;
+DELETE FROM produtos WHERE preco < 20 AND > 10;
+DELETE FROM produtos WHERE nome LIKE '%Tesoura%';
+DELETE FROM produtos WHERE categoria = 'Papelaria Criativa' AND preco > 15.00;
+DELETE FROM produtos WHERE nome = 'Porta-lapis';
+DELETE FROM produtos WHERE preco < 10.00;
 
