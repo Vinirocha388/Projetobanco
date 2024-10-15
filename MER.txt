@@ -1,0 +1,14 @@
+Entidades:
+
+-Produtos
+-Categoria
+
+Atributos:
+
+-Produtos: ID, NOME, PREÇO
+-Categoria: ID, NOME
+
+Relações:
+
+-Vários produtos podem pertencer a uma categoria (n,1)
+-Uma categoria pode ter vários produtos (1,n)
